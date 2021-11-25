@@ -28,7 +28,7 @@ which you can noww use in your code to automatically remember the user.
 	$minutes = 1440;
 	$ninjaCrypter = new NinjaCrypter();
 	$encrypted = $ninjaCrypter->accessCreator($user->email, $user->raw_password);
-	Cookie::queue(Cookie::make('antware', $encrypted, $minutes, null, '.antware.com'));
+	Cookie::queue(Cookie::make('antuser', $encrypted, $minutes, null, '.antware.com'));
 ```
 	
 ##### Getting Encrypted Username & Password
