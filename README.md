@@ -18,11 +18,11 @@ which you can noww use in your code to automatically remember the user.
 3. accessParser
 
 #### Base Class
-'''new AntNinjaCrypter();'''
+```new AntNinjaCrypter();```
 
 #### Usage
 
-'''
+```
 	$access = Cookie::get('antuser');
 	$ninjaCrypter = new NinjaCrypter();
 	$userpass = $ninjaCrypter->accessParser($access);
