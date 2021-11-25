@@ -22,6 +22,16 @@ which you can noww use in your code to automatically remember the user.
 
 #### Usage
 
+##### Creating Encrpted String with Username & Password
+
+```
+	$ninjaCrypter = new NinjaCrypter();
+	$encrypted = $ninjaCrypter->accessCreator($user->email, $user->raw_password);
+	Cookie::queue(Cookie::make('ozitecno', $encrypted, $minutes, null, '.20bids.com'));
+```
+	
+##### Getting Encrypted Username & Password
+
 ```
 	$access = Cookie::get('antuser');
 	$ninjaCrypter = new NinjaCrypter();
